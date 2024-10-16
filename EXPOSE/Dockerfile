@@ -1,6 +1,5 @@
 FROM almalinux:9
-RUN sudo dnf install nginx -y
+RUN dnf install nginx -y
+EXPOSE 80
 CMD ["nginx", "-g", "deamon off;"]
-
-
 
