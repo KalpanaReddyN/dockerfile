@@ -84,7 +84,7 @@ In the above command ec2-user is the name of the user, you can change the userna
 
 NOTE: : You need to logout and login back for the changes to be reflected.
 
-**Docker is Installed, up and running **
+**Docker is Installed, up and running**
 
 Clone this repository and run the examples
 
