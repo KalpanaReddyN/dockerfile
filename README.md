@@ -53,7 +53,10 @@ Docker is a containerization platform that provides easy way to containerize you
 **Docker LifeCycle?**
 
 There are three important things,
+
     docker build -> builds docker images from Dockerfile
+    
     docker run -> runs container from docker images
+    
     docker push -> push the container image to public/private regestries to share the docker images.
     
