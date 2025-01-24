@@ -59,4 +59,33 @@ There are three important things,
     docker run -> runs container from docker images
     
     docker push -> push the container image to public/private regestries to share the docker images.
+
+**INSTALL DOCKER**
+
+You can create an RHEL EC2 Instance on AWS and run the below commands to install docker.
+    
+    sudo su -	
+    
+    yum install -y yum-utils
+    
+    yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+    
+    yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    
+    systemctl start docker
+    
+    systemctl status docker
+
+To grant access to your user to run the docker command, you should add the user to the Docker Linux group. Docker group is create by default when docker is installed.
+    
+    sudo usermod -aG docker ec2-user
+
+In the above command ec2-user is the name of the user, you can change the username appropriately.
+
+NOTE: : You need to logout and login back for the changes to be reflected.
+
+**Docker is Installed, up and running **
+
+Clone this repository and run the examples
+
     
