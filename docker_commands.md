@@ -14,14 +14,14 @@
 
 **docker run -d <image_name>** --> Runs a Docker container.
     
-    **docker run -d -p <host_port>:<container_port> <image_name>**
+**docker run -d -p <host_port>:<container_port> <image_name>**
     
-    **docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>**
+**docker run -d --name <container_name> -p <host_port>:<container_port> <image_name>**
     
-    -d: Run in detached mode.
-    --name: Assign a custom name to the container.
-    -p: Map host port to container port.
-    use docker run --help to look into more arguments.
+-d: Run in detached mode.
+--name: Assign a custom name to the container.
+-p: Map host port to container port.
+use docker run --help to look into more arguments.
 
 **docker stop <container_id_or_name>**--> Stops running container.
 
