@@ -1,4 +1,4 @@
-What is a container ?
+**What is a container ?**
 
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
@@ -9,7 +9,7 @@ Containers and virtual machines are both technologies used to isolate applicatio
     3. Security: VMs provide a higher level of security as each VM has its own operating system and can be isolated from the host and other VMs. Containers provide less isolation, as they share the host operating system.
     4. Management: Managing containers is typically easier than managing VMs, as containers are designed to be lightweight and fast-moving.
 
-Why are containers light weight ?
+**Why are containers light weight ?**
 
 Containers are lightweight because they use a technology called containerization, which allows them to share the host operating system's kernel and libraries, while still providing isolation for the application and its dependencies. This results in a smaller footprint compared to traditional virtual machines, as the containers do not need to include a full operating system. Additionally, Docker containers are designed to be minimal, only including what is necessary for the application to run, further reducing their size.
 For example: official ubuntu base image which you can use for your container. It's just ~ 22 MB, isn't it very small ? on a contrary if you look at official ubuntu VM image it will be close to ~ 2.3 GB. So the container base image is almost 100 times less than VM image.
@@ -46,10 +46,12 @@ To provide a better picture of files and folders that containers base images hav
 
     Control groups (cgroups): Docker containers use cgroups to limit and control the amount of resources, such as CPU, memory, and I/O, that a container can access.
 
-What is Docker ?
+**What is Docker ?**
+
 Docker is a containerization platform that provides easy way to containerize your applications, which means, using Docker you can build container images, run the images to create containers and also push these containers to container regestries such as DockerHub, Quay.io and so on.
 
-Docker LifeCycle?
+**Docker LifeCycle?**
+
 There are three important things,
     docker build -> builds docker images from Dockerfile
     docker run -> runs container from docker images
